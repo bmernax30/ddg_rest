@@ -1,0 +1,173 @@
+openapi: 3.0.0
+info:
+  title: "DDG Course REST Api"
+  description: "An API for getting course information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Course:
+      type: "object"
+      required:
+        - course_name
+      properties:
+        course_name:
+          type: "string"
+        layout:
+          type: "integer"
+        num_holes:
+          type: "integer"
+        hole1_id:
+          type: "integer"
+        hole2_id:
+          type: "integer"
+        hole3_id:
+          type: "integer"
+        hole4_id:
+          type: "integer"
+        hole5_id:
+          type: "integer"
+        hole6_id:
+          type: "integer"
+        hole7_id:
+          type: "integer"
+        hole8_id:
+          type: "integer"
+        hole9_id:
+          type: "integer"
+        hole10_id:
+          type: "integer"
+        hole11_id:
+          type: "integer"
+        hole12_id:
+          type: "integer"
+        hole13_id:
+          type: "integer"
+        hole14_id:
+          type: "integer"
+        hole15_id:
+          type: "integer"
+        hole16_id:
+          type: "integer"
+        hole17_id:
+          type: "integer"
+        hole18_id:
+          type: "integer"
+        hole19_id:
+          type: "integer"
+        hole20_id:
+          type: "integer"
+        hole21_id:
+          type: "integer"
+        hole22_id:
+          type: "integer"
+        hole23_id:
+          type: "integer"
+        hole24_id:
+          type: "integer"
+        hole25_id:
+          type: "integer"
+        hole26_id:
+          type: "integer"
+        hole27_id:
+          type: "integer"
+        hole28_id:
+          type: "integer"
+        hole29_id:
+          type: "integer"
+        hole30_id:
+          type: "integer"
+        hole31_id:
+          type: "integer"
+        hole32_id:
+          type: "integer"
+        hole33_id:
+          type: "integer"
+        hole34_id:
+          type: "integer"
+        hole35_id:
+          type: "integer"
+        hole36_id:
+          type: "integer"
+  parameters:
+    course_name:
+      name: "course_name"
+      description: "Course name of the course entry"
+      in: path
+      required: True
+      schema:
+        type: "string"
+    course_id:
+      name: "course_id"
+      description: "The id representing the course being played in the game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+
+paths:
+  /courses:
+    get:
+      operationId: "courses.read_all"
+      tags:
+        - "Courses"
+      summary: "Read the list of courses"
+      responses:
+        "200":
+          description: "Successfully read courses list"
+    post:
+      operationId: "courses.create"
+      tags:
+        - Courses
+      summary: "Create a course"
+      requestBody:
+          description: "Course to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "course"
+                $ref: "#/components/schemas/Course"
+      responses:
+        "201":
+          description: "Successfully created course"
+  /courses/{course_name}:
+    get:
+      operationId: "courses.read_one"
+      tags:
+        - Courses
+      summary: "Read one course"
+      parameters:
+        - $ref: "#/components/parameters/course_name"
+      responses:
+        "200":
+          description: "Successfully read course"
+    put:
+      tags:
+        - Courses
+      operationId: "courses.update"
+      summary: "Update a course"
+      parameters:
+        - $ref: "#/components/parameters/course_name"
+      responses:
+        "200":
+          description: "Successfully updated course"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "course"
+              $ref: "#/components/schemas/Course"
+    delete:
+      tags:
+        - Courses
+      operationId: "courses.delete"
+      summary: "Delete a course"
+      parameters:
+        - $ref: "#/components/parameters/course_name"
+      responses:
+        "204":
+          description: "Successfully deleted course"

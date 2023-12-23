@@ -1,0 +1,182 @@
+openapi: 3.0.0
+info:
+  title: "DDG Player REST Api"
+  description: "An API for getting player information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Player:
+      type: "object"
+      required:
+        - user_id
+      properties:
+        user_id:
+          type: "integer"
+        player_class:
+          type: "integer"
+        total_holes:
+          type: "integer"
+        holes_played:
+          type: "integer"
+        player_score:
+          type: "integer"
+        player_active:
+          type: "integer"
+        player_stars:
+          type: "integer"
+        hole1_id:
+          type: "integer"
+        hole2_id:
+          type: "integer"
+        hole3_id:
+          type: "integer"
+        hole4_id:
+          type: "integer"
+        hole5_id:
+          type: "integer"
+        hole6_id:
+          type: "integer"
+        hole7_id:
+          type: "integer"
+        hole8_id:
+          type: "integer"
+        hole9_id:
+          type: "integer"
+        hole10_id:
+          type: "integer"
+        hole11_id:
+          type: "integer"
+        hole12_id:
+          type: "integer"
+        hole13_id:
+          type: "integer"
+        hole14_id:
+          type: "integer"
+        hole15_id:
+          type: "integer"
+        hole16_id:
+          type: "integer"
+        hole17_id:
+          type: "integer"
+        hole18_id:
+          type: "integer"
+        hole19_id:
+          type: "integer"
+        hole20_id:
+          type: "integer"
+        hole21_id:
+          type: "integer"
+        hole22_id:
+          type: "integer"
+        hole23_id:
+          type: "integer"
+        hole24_id:
+          type: "integer"
+        hole25_id:
+          type: "integer"
+        hole26_id:
+          type: "integer"
+        hole27_id:
+          type: "integer"
+        hole28_id:
+          type: "integer"
+        hole29_id:
+          type: "integer"
+        hole30_id:
+          type: "integer"
+        hole31_id:
+          type: "integer"
+        hole32_id:
+          type: "integer"
+        hole33_id:
+          type: "integer"
+        hole34_id:
+          type: "integer"
+        hole35_id:
+          type: "integer"
+        hole36_id:
+          type: "integer"
+
+  parameters:
+    player_id:
+      name: "player_id"
+      description: "Id to identify each player entry"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    user_id:
+      name: "user_id"
+      description: "Id of the user account in the player entry"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+
+paths:
+  /players:
+    get:
+      operationId: "players.read_all"
+      tags:
+        - "Players"
+      summary: "Read the list of players"
+      responses:
+        "200":
+          description: "Successfully read players list"
+    post:
+      operationId: "players.create"
+      tags:
+        - Players
+      summary: "Create a player"
+      requestBody:
+          description: "Player to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "player"
+                $ref: "#/components/schemas/Player"
+      responses:
+        "201":
+          description: "Successfully created player"
+  /players/{player_id}:
+    get:
+      operationId: "players.read_one"
+      tags:
+        - Players
+      summary: "Read one player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully read player"
+    put:
+      tags:
+        - Players
+      operationId: "players.update"
+      summary: "Update a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully updated player"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "player"
+              $ref: "#/components/schemas/Player"
+    delete:
+      tags:
+        - Games
+      operationId: "players.delete"
+      summary: "Delete a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "204":
+          description: "Successfully deleted player"

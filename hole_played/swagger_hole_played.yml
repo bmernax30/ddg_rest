@@ -1,0 +1,110 @@
+openapi: 3.0.0
+info:
+  title: "DDG Hole Played REST Api"
+  description: "An API for getting hole played information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Hole_Played:
+      type: "object"
+      required:
+        - hole_id
+      properties:
+        hole_id:
+          type: "integer"
+        strokes:
+          type: "integer"
+        passive_used:
+          type: "integer"
+        active_used:
+          type: "integer"
+        encounter_id:
+          type: "integer"
+        encounter_defeated:
+          type: "integer"
+        hole_completed:
+          type: "integer"
+
+  parameters:
+    hole_id:
+      name: "hole_id"
+      description: "ID for the hole entry data"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    holes_played_id:
+      name: "holes_played_id"
+      description: "Id for the hole played entry data"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+
+paths:
+  /holes_played:
+    get:
+      operationId: "holes_played.read_all"
+      tags:
+        - "Holes_Played"
+      summary: "Read the list of holes played"
+      responses:
+        "200":
+          description: "Successfully read holes played list"
+    post:
+      operationId: "holes_played.create"
+      tags:
+        - Holes_Played
+      summary: "Create a played hole"
+      requestBody:
+          description: "Holes played to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "hole_played"
+                $ref: "#/components/schemas/Hole_Played"
+      responses:
+        "201":
+          description: "Successfully created hole played"
+  /holes_played/{hole_played_id}:
+    get:
+      operationId: "holes_played.read_one"
+      tags:
+        - Holes_Played
+      summary: "Read one hole played"
+      parameters:
+        - $ref: "#/components/parameters/holes_played_id"
+      responses:
+        "200":
+          description: "Successfully read hole"
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/holes_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"
+    delete:
+      tags:
+        - Holes
+      operationId: "holes_played.delete"
+      summary: "Delete a hole played"
+      parameters:
+        - $ref: "#/components/parameters/holes_played_id"
+      responses:
+        "204":
+          description: "Successfully deleted hole played"

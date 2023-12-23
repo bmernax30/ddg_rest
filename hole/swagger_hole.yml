@@ -1,0 +1,114 @@
+openapi: 3.0.0
+info:
+  title: "DDG Hole REST Api"
+  description: "An API for getting hole information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Hole:
+      type: "object"
+      required:
+        - course_id
+        - hole_number
+        - hole_par
+      properties:
+        course_id:
+          type: "integer"
+        hole_number:
+          type: "integer"
+        hole_par:
+          type: "integer"
+        hole_distance:
+          type: "integer"
+ 
+  parameters:
+    course_id:
+      name: "course_id"
+      description: "The id representing the course being played in the game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    hole_number:
+      name: "hole_number"
+      description: "Hole number on the course"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    hole_id:
+      name: "hole_id"
+      description: "ID for the hole entry data"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+
+paths:
+  /holes:
+    get:
+      operationId: "holes.read_all"
+      tags:
+        - "Holes"
+      summary: "Read the list of holes"
+      responses:
+        "200":
+          description: "Successfully read holes list"
+    post:
+      operationId: "holes.create"
+      tags:
+        - Holes
+      summary: "Create a hole"
+      requestBody:
+          description: "Hole to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "hole"
+                $ref: "#/components/schemas/Hole"
+      responses:
+        "201":
+          description: "Successfully created hole"
+  /holes/{hole_id}:
+    get:
+      operationId: "holes.read_one"
+      tags:
+        - Holes
+      summary: "Read one hole"
+      parameters:
+        - $ref: "#/components/parameters/hole_id"
+      responses:
+        "200":
+          description: "Successfully read hole"
+    put:
+      tags:
+        - Holes
+      operationId: "holes.update"
+      summary: "Update a hole"
+      parameters:
+        - $ref: "#/components/parameters/hole_id"
+      responses:
+        "200":
+          description: "Successfully updated hole"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole"
+              $ref: "#/components/schemas/Hole"
+    delete:
+      tags:
+        - Holes
+      operationId: "holes.delete"
+      summary: "Delete a hole"
+      parameters:
+        - $ref: "#/components/parameters/hole_id"
+      responses:
+        "204":
+          description: "Successfully deleted hole"
+ 

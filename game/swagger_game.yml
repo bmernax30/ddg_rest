@@ -1,0 +1,145 @@
+openapi: 3.0.0
+info:
+  title: "DDG Game REST Api"
+  description: "An API for getting game information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Game:
+      type: "object"
+      required:
+        - course_id
+        - game_mode
+        - num_players
+        - player1_id
+      properties:
+        finished:
+          type: "integer"
+        course_id:
+          type: "integer"
+        game_mode:
+          type: "integer"
+        date:
+          type: "string"
+        num_players:
+          type: "integer"
+        player1_id:
+          type: "integer"
+        player2_id:
+          type: "integer"
+        player3_id:
+          type: "integer"
+        player4_id:
+          type: "integer"
+        player5_id:
+          type: "integer"
+        player6_id:
+          type: "integer"
+        player7_id:
+          type: "integer"
+        player8_id:
+          type: "integer"
+
+  parameters:
+    course_id:
+      name: "course_id"
+      description: "The id representing the course being played in the game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    game_id:
+      name: "game_id"
+      description: "The reference id of each game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    game_mode:
+      name: "game_mode"
+      description: "The game mode being played in the current game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    num_players:
+      name: "num_players"
+      description: "The number of players in the current game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    player1_id:
+      name: "player1_id"
+      description: "Id of the first player in the game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+paths:
+  /games:
+    get:
+      operationId: "games.read_all"
+      tags:
+        - "Games"
+      summary: "Read the list of games"
+      responses:
+        "200":
+          description: "Successfully read games list"
+    post:
+      operationId: "games.create"
+      tags:
+        - Games
+      summary: "Create a game"
+      requestBody:
+          description: "Game to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "game"
+                $ref: "#/components/schemas/Game"
+      responses:
+        "201":
+          description: "Successfully created game"
+  /games/{game_id}:
+    get:
+      operationId: "games.read_one"
+      tags:
+        - Games
+      summary: "Read one game"
+      parameters:
+        - $ref: "#/components/parameters/game_id"
+      responses:
+        "200":
+          description: "Successfully read game"
+    put:
+      tags:
+        - Games
+      operationId: "games.update"
+      summary: "Update a game"
+      parameters:
+        - $ref: "#/components/parameters/game_id"
+      responses:
+        "200":
+          description: "Successfully updated game"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "game"
+              $ref: "#/components/schemas/Game"
+    delete:
+      tags:
+        - Games
+      operationId: "games.delete"
+      summary: "Delete a game"
+      parameters:
+        - $ref: "#/components/parameters/game_id"
+      responses:
+        "204":
+          description: "Successfully deleted game"

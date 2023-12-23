@@ -1,0 +1,184 @@
+openapi: 3.0.0
+info:
+  title: "DDG Encounter REST Api"
+  description: "An API for getting encounter information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Encounter:
+      type: "object"
+      properties:
+        encounter_pool:
+          type: "integer"
+        encounter_image:
+          type: "integer"
+        encounter_name:
+          type: "integer"
+        encounter_type:
+          type: "integer"
+        encounter_star:
+          type: "integer"
+        encounter_reward_code:
+          type: "integer"
+  
+  parameters:
+    username:
+      name: "username"
+      description: "Username of the user to get"
+      in: path
+      required: True
+      schema:
+        type: "string"
+    course_name:
+      name: "course_name"
+      description: "Course name of the course entry"
+      in: path
+      required: True
+      schema:
+        type: "string"
+    course_id:
+      name: "course_id"
+      description: "The id representing the course being played in the game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    game_id:
+      name: "game_id"
+      description: "The reference id of each game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    game_mode:
+      name: "game_mode"
+      description: "The game mode being played in the current game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    num_players:
+      name: "num_players"
+      description: "The number of players in the current game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    player1_id:
+      name: "player1_id"
+      description: "Id of the first player in the game"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    player_id:
+      name: "player_id"
+      description: "Id to identify each player entry"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    user_id:
+      name: "user_id"
+      description: "Id of the user account in the player entry"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    hole_number:
+      name: "hole_number"
+      description: "Hole number on the course"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    hole_id:
+      name: "hole_id"
+      description: "ID for the hole entry data"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    holes_played_id:
+      name: "holes_played_id"
+      description: "Id for the hole played entry data"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    encounter_id:
+      name: "encounter_id"
+      description: "Id for the encounter entry"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+
+paths:
+  /encounters:
+    get:
+      operationId: "encounters.read_all"
+      tags:
+        - "Encounters"
+      summary: "Read the list of encounters"
+      responses:
+        "200":
+          description: "Successfully read encounters list"
+    post:
+      operationId: "encounters.create"
+      tags:
+        - Encounters
+      summary: "Create an encounter"
+      requestBody:
+          description: "Encounter to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "encounter"
+                $ref: "#/components/schemas/Encounter"
+      responses:
+        "201":
+          description: "Successfully created encounter"
+  /encounters/{encounter_id}:
+    get:
+      operationId: "encounters.read_one"
+      tags:
+        - Encounters
+      summary: "Read one encounter"
+      parameters:
+        - $ref: "#/components/parameters/encounter_id"
+      responses:
+        "200":
+          description: "Successfully read encounter"
+    put:
+      tags:
+        - Encounters
+      operationId: "encounters.update"
+      summary: "Update an encounter"
+      parameters:
+        - $ref: "#/components/parameters/encounter_id"
+      responses:
+        "200":
+          description: "Successfully updated an encounter"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "encounter"
+              $ref: "#/components/schemas/Encounter"
+    delete:
+      tags:
+        - Encounters
+      operationId: "encounters.delete"
+      summary: "Delete an encounter"
+      parameters:
+        - $ref: "#/components/parameters/encounter_id"
+      responses:
+        "204":
+          description: "Successfully deleted an encounter"
+  
