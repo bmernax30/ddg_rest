@@ -1,0 +1,23 @@
+<!-- templates/home_hole_played.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDG Rest API</title>
+</head>
+<body>
+    <h1>
+        DDG Hole Played Main Page!
+    </h1>
+    <ul>
+        {% for hole_played in holes_played %}
+        <li>
+            {{ hole_played.hole_id }} {{ hole_played.strokes }} {{ hole_played.passive_used }}
+            {{ hole_played.active_used }} {{ hole_played.encounter_id }} {{ hole_played.encounter_defeated }}
+            {{ hole_played.hole_completed }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

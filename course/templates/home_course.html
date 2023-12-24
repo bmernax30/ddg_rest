@@ -1,0 +1,33 @@
+<!-- templates/home_course.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDG Rest API</title>
+</head>
+<body>
+    <h1>
+        DDG Courses Main Page!
+    </h1>
+    <ul>
+        {% for course in courses %}
+        <li>
+            {{ course.course_name }} {{ course.layout}} {{ course.num_holes}}
+            {{ course.hole1_id }} {{ course.hole2_id}} {{ course.hole3_id}}
+            {{ course.hole4_id }} {{ course.hole5_id}} {{ course.hole6_id}}
+            {{ course.hole7_id }} {{ course.hole8_id}} {{ course.hole9_id}}
+            {{ course.hole10_id }} {{ course.hole11_id}} {{ course.hole12_id}}
+            {{ course.hole13_id }} {{ course.hole14_id}} {{ course.hole15_id}}
+            {{ course.hole16_id }} {{ course.hole17_id}} {{ course.hole18_id}}
+            {{ course.hole19_id }} {{ course.hole20_id}} {{ course.hole21_id}}
+            {{ course.hole22_id }} {{ course.hole23_id}} {{ course.hole24_id}}
+            {{ course.hole25_id }} {{ course.hole26_id}} {{ course.hole27_id}}
+            {{ course.hole28_id }} {{ course.hole29_id}} {{ course.hole30_id}}
+            {{ course.hole31_id }} {{ course.hole32_id}} {{ course.hole33_id}}
+            {{ course.hole34_id }} {{ course.hole35_id}} {{ course.hole36_id}}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

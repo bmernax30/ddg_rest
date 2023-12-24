@@ -54,7 +54,7 @@ class PlayerSchema(ma_player.SQLAlchemyAutoSchema):
     class Meta:
         model = Player
         load_instance = True
-        sqla_session = db.session
+        sqla_session = db_player.session
    
 player_schema = PlayerSchema()
 players_schema = PlayerSchema(many=True)

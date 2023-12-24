@@ -1,1 +1,26 @@
+//Create Virtual Env
+python -m venv ddg_env
+
+//Launch Virtual Env
 source ddg_env/bin/activate
+
+//Deactivate Virtual Env
+deactivate
+
+//Launch Web Port for Database
+python app.py
+
+//PORT LIST
+8000- user
+8001- game
+8002- hole
+8003- hole_played
+8004- player
+8005- course
+8006- encounter
+
+//Display Pythons running
+ps
+
+//Kill Process
+kill -9 {id}

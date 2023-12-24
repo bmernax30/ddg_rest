@@ -1,0 +1,25 @@
+<!-- templates/home_game.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDG Rest API</title>
+</head>
+<body>
+    <h1>
+        DDG Games Main Page!
+    </h1>
+    <ul>
+        {% for game in games %}
+        <li>
+            {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+            {{ game.date }} {{ game.num_players}} {{ game.num_players}}
+            {{ game.player1_id }} {{ game.player2_id}} {{ game.player3_id}}
+            {{ game.player4_id }} {{ game.player5_id}} {{ game.player6_id}}
+            {{ game.player7_id }} {{ game.player8_id}}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- templates/home_hole.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDG Rest API</title>
+</head>
+<body>
+    <h1>
+        DDG Holes Main Page!
+    </h1>
+    <ul>
+        {% for hole in holes %}
+        <li>
+            {{ hole.course_id }} {{ hole.hole_number}} {{ hole.hole_par}}
+            {{ hole.hole_distance }}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

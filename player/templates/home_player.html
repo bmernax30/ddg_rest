@@ -1,0 +1,35 @@
+<!-- templates/home_player.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDG Rest API</title>
+</head>
+<body>
+    <h1>
+        DDG Players Main Page!
+    </h1>
+    <ul>
+        {% for player in players %}
+        <li>
+            {{ player.user_id }} {{ player.player_class}} {{ player.total_holes}}
+            {{ player.holes_played }} {{ player.player_score}} {{ player.player_active}}
+            {{ player.player_stars }}
+            {{ player.hole1_id }} {{ player.hole2_id}} {{ player.hole3_id}}
+            {{ player.hole4_id }} {{ player.hole5_id}} {{ player.hole6_id}}
+            {{ player.hole7_id }} {{ player.hole8_id}} {{ player.hole9_id}}
+            {{ player.hole10_id }} {{ player.hole11_id}} {{ player.hole12_id}}
+            {{ player.hole13_id }} {{ player.hole14_id}} {{ player.hole15_id}}
+            {{ player.hole16_id }} {{ player.hole17_id}} {{ player.hole18_id}}
+            {{ player.hole19_id }} {{ player.hole20_id}} {{ player.hole21_id}}
+            {{ player.hole22_id }} {{ player.hole23_id}} {{ player.hole24_id}}
+            {{ player.hole25_id }} {{ player.hole26_id}} {{ player.hole27_id}}
+            {{ player.hole28_id }} {{ player.hole29_id}} {{ player.hole30_id}}
+            {{ player.hole31_id }} {{ player.hole32_id}} {{ player.hole33_id}}
+            {{ player.hole34_id }} {{ player.hole35_id}} {{ player.hole36_id}}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
