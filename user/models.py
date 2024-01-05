@@ -8,6 +8,7 @@ class User(db_user.Model):
     id = db_user.Column(db_user.Integer, primary_key=True)
     username = db_user.Column(db_user.String(32), unique=True)
     password = db_user.Column(db_user.String(32))
+    phone_id = db_user.Column(db_user.String(32))
     games_played = db_user.Column(db_user.Integer)
 
 class UserSchema(ma_user.SQLAlchemyAutoSchema):

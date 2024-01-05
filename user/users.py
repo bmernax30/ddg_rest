@@ -10,8 +10,7 @@ def read_all():
 def create(user):
     username = user.get("username")
     existing_user = User.query.filter(User.username == username).one_or_none()
-
-    if existing_user is NONE:
+    if existing_user is None:
         new_user = user_schema.load(user, session=db_user.session)
         db_user.session.add(new_user)
         db_user.session.commit()
@@ -21,6 +20,7 @@ def create(user):
 
 def read_one(username):
     user = User.query.filter(User.username == username).one_or_none()
+    print(user)
     if user is not None:
         return user_schema.dump(user)
     else:
@@ -31,6 +31,8 @@ def update(username, user):
     if existing_user:
         update_user = user_schema.load(user, session=db_user.session)
         existing_user.password = update_user.password
+        existing_user.phone_id = update_user.phone_id
+        existing_user.games_played = update_user.games_played
         db_user.session.merge(existing_user)
         db_user.session.commit()
         return user_schema.dump(existing_user), 201

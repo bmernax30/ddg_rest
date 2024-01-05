@@ -7,4 +7,10 @@
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 944-764-232
+ * Debugger PIN: 559-982-892
+199.241.27.12 - - [02/Jan/2024 02:49:11] "GET /api/ui/ HTTP/1.1" 200 -
+199.241.27.12 - - [02/Jan/2024 02:49:11] "GET /api/ui/swagger-ui.css HTTP/1.1" 200 -
+199.241.27.12 - - [02/Jan/2024 02:49:11] "GET /api/ui/swagger-ui-bundle.js HTTP/1.1" 200 -
+199.241.27.12 - - [02/Jan/2024 02:49:11] "GET /api/ui/swagger-ui-standalone-preset.js HTTP/1.1" 200 -
+199.241.27.12 - - [02/Jan/2024 02:49:11] "GET /api/ui/favicon-32x32.png HTTP/1.1" 200 -
+199.241.27.12 - - [02/Jan/2024 02:49:11] "GET /api/openapi.json HTTP/1.1" 200 -

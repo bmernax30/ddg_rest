@@ -18,6 +18,8 @@ components:
           type: "string"
         password:
           type: "string"
+        phone_id:
+          type: "string"
         games_played:
           type: "integer"
 

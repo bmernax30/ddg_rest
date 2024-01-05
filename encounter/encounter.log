@@ -7,4 +7,8 @@
 [33mPress CTRL+C to quit[0m
  * Restarting with stat
  * Debugger is active!
- * Debugger PIN: 117-508-365
+ * Debugger PIN: 703-532-571
+198.199.106.81 - - [01/Jan/2024 21:45:02] code 400, message Bad request syntax ('MGLNDD_199.241.27.12_8006')
+198.199.106.81 - - [01/Jan/2024 21:45:02] "[31m[1mMGLNDD_199.241.27.12_8006[0m" 400 -
+199.241.27.12 - - [02/Jan/2024 02:49:23] "GET / HTTP/1.1" 200 -
+199.241.27.12 - - [02/Jan/2024 02:49:23] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -

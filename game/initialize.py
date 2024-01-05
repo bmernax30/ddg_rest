@@ -4,23 +4,24 @@ import sqlite3
 conn = sqlite3.connect("games.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
+	"game_id VARCHAR",
  	"finished INTEGER",
-	"course_id INTEGER",
+	"course_name VARCHAR",
 	"game_mode INTEGER",
 	"date VARCHAR",
 	"num_players INTEGER",
-	"player1_id INTEGER",
-	"player2_id INTEGER",
- 	"player3_id INTEGER",
- 	"player4_id INTEGER",
- 	"player5_id INTEGER",
- 	"player6_id INTEGER",
- 	"player7_id INTEGER",
- 	"player8_id INTEGER",
+	"player1_username VARCHAR",
+	"player2_username VARCHAR",
+	"player3_username VARCHAR",
+	"player4_username VARCHAR",
+	"player5_username VARCHAR",
+	"player6_username VARCHAR",
+	"player7_username VARCHAR",
+	"player8_username VARCHAR",
 	]
 #Initialize Data
 games = [
-	"1,0,1,1,'12/25/23 00:00:00',2,1,2,0,0,0,0,0,0"
+	"1,'XY24T',0,'Chili',1,'12/25/23 00:00:00',2,'Steve','bmernax30','','','','','',''"
 	]
 #Create the database
 create_table_cmd = f"CREATE TABLE game ({','.join(columns)})"
