@@ -7,7 +7,9 @@ columns = [
 	"game_id VARCHAR",
  	"finished INTEGER",
 	"course_name VARCHAR",
+ 	"layout_name VARCHAR",
 	"game_mode INTEGER",
+ 	"active_start INTEGER",
 	"date VARCHAR",
 	"num_players INTEGER",
 	"player1_username VARCHAR",
@@ -18,11 +20,20 @@ columns = [
 	"player6_username VARCHAR",
 	"player7_username VARCHAR",
 	"player8_username VARCHAR",
+ 	"player1_id INTEGER",
+   	"player2_id INTEGER",
+    "player3_id INTEGER",
+    "player4_id INTEGER",
+    "player5_id INTEGER",
+    "player6_id INTEGER",
+    "player7_id INTEGER",
+    "player8_id INTEGER",
 	]
 #Initialize Data
 games = [
-	"1,'XY24T',0,'Chili',1,'12/25/23 00:00:00',2,'Steve','bmernax30','','','','','',''"
+	"1,'AAAAA',0,'Chili','Main',1,1,'12/25/23 09:00:11',1,'player1','','','','','','','',1,0,0,0,0,0,0,0",
 	]
+
 #Create the database
 create_table_cmd = f"CREATE TABLE game ({','.join(columns)})"
 conn.execute(create_table_cmd)

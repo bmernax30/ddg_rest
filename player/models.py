@@ -6,8 +6,9 @@ from config import ma_player
 class Player(db_player.Model):
     __tablename__ = "player"
     id = db_player.Column(db_player.Integer, primary_key=True)
-    user_id = db_player.Column(db_player.Integer)
-    player_class = db_player.Column(db_player.Integer)
+    local_id = db_player.Column(db_player.Integer)
+    username = db_player.Column(db_player.String(32))
+    player_class = db_player.Column(db_player.String(32))
     total_holes = db_player.Column(db_player.Integer)
     holes_played = db_player.Column(db_player.Integer)
     player_score = db_player.Column(db_player.Integer)

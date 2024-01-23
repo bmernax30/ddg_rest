@@ -4,6 +4,7 @@ import sqlite3
 conn = sqlite3.connect("holes_played.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
+	"local_id INTEGER",
  	"hole_id INTEGER",
 	"strokes INTEGER",
 	"passive_used INTEGER",
@@ -14,7 +15,7 @@ columns = [
 	]
 #Initialize Data
 holes_played = [
-	"1,1,4,1,0,0,0,1"
+	"0,1,1,4,1,0,0,0,1"
 	]
 #Create the database
 create_table_cmd = f"CREATE TABLE hole_played ({','.join(columns)})"

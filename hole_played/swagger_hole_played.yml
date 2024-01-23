@@ -14,6 +14,8 @@ components:
       required:
         - hole_id
       properties:
+        local_id:
+          type: "integer"
         hole_id:
           type: "integer"
         strokes:
@@ -37,8 +39,8 @@ components:
       required: True
       schema:
         type: "integer"
-    holes_played_id:
-      name: "holes_played_id"
+    hole_played_id:
+      name: "hole_played_id"
       description: "Id for the hole played entry data"
       in: path
       required: True
@@ -78,7 +80,7 @@ paths:
         - Holes_Played
       summary: "Read one hole played"
       parameters:
-        - $ref: "#/components/parameters/holes_played_id"
+        - $ref: "#/components/parameters/hole_played_id"
       responses:
         "200":
           description: "Successfully read hole"
@@ -88,7 +90,7 @@ paths:
       operationId: "holes_played.update"
       summary: "Update a hole played"
       parameters:
-        - $ref: "#/components/parameters/holes_played_id"
+        - $ref: "#/components/parameters/hole_played_id"
       responses:
         "200":
           description: "Successfully updated hole played"
@@ -104,7 +106,7 @@ paths:
       operationId: "holes_played.delete"
       summary: "Delete a hole played"
       parameters:
-        - $ref: "#/components/parameters/holes_played_id"
+        - $ref: "#/components/parameters/hole_played_id"
       responses:
         "204":
           description: "Successfully deleted hole played"

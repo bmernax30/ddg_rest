@@ -4,8 +4,9 @@ import sqlite3
 conn = sqlite3.connect("players.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
- 	"user_id INTEGER",
- 	"player_class INTEGER",
+ 	"local_id INTEGER",
+ 	"username VARCHAR",
+ 	"player_class VARCHAR",
  	"total_holes INTEGER",
   	"holes_played INTEGER",
   	"player_score INTEGER",
@@ -50,7 +51,7 @@ columns = [
 	]
 #Initialize Data
 players = [
-	"1,1,1,18,4,1,1,3,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
+	"1,0,'bmernax30','RANGER',18,4,1,1,3,1,2,3,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"
 	]
 #Create the database
 create_table_cmd = f"CREATE TABLE player ({','.join(columns)})"

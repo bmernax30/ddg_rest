@@ -24,12 +24,16 @@ components:
           type: "integer"
         course_name:
           type: "string"
+        layout_name:
+          type: "string"
         game_mode:
+          type: "integer"
+        active_start:
           type: "integer"
         date:
           type: "string"
         num_players:
-          type: "string"
+          type: "integer"
         player1_username:
           type: "string"
         player2_username:
@@ -46,11 +50,28 @@ components:
           type: "string"
         player8_username:
           type: "string"
+        player1_id:
+          type: "integer"
+        player2_id:
+          type: "integer"
+        player3_id:
+          type: "integer"
+        player4_id:
+          type: "integer"
+        player5_id:
+          type: "integer"
+        player6_id:
+          type: "integer"
+        player7_id:
+          type: "integer"
+        player8_id:
+          type: "integer"
+
 
   parameters:
     course_name:
       name: "course_name"
-      description: "The name of the course being played in the game"
+      description: "The name of the course being played and the layout combined"
       in: path
       required: True
       schema:

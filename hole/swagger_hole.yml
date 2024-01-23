@@ -12,12 +12,15 @@ components:
     Hole:
       type: "object"
       required:
-        - course_id
+        - course_name
+        - layout_name
         - hole_number
         - hole_par
       properties:
-        course_id:
-          type: "integer"
+        course_name:
+          type: "string"
+        layout_name:
+          type: "string"
         hole_number:
           type: "integer"
         hole_par:
@@ -26,13 +29,20 @@ components:
           type: "integer"
  
   parameters:
-    course_id:
-      name: "course_id"
-      description: "The id representing the course being played in the game"
+    course_name:
+      name: "course_name"
+      description: "The course name this hole belongs too."
       in: path
       required: True
       schema:
-        type: "integer"
+        type: "string"
+    layout_name:
+      name: "layout_name"
+      description: "The layout name this hole belongs too."
+      in: path
+      required: True
+      schema:
+        type: "string"
     hole_number:
       name: "hole_number"
       description: "Hole number on the course"

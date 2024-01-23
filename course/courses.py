@@ -8,10 +8,11 @@ def read_all():
     return courses_schema.dump(courses)
 
 def create(course):
+    #This needs to be changed for course create
     course_name = course.get("course_name")
     existing_course = Course.query.filter(Course.course_name == course_name).one_or_none()
 
-    if existing_course is NONE:
+    if existing_course is None:
         new_course = course_schema.load(course, session=db_course.session)
         db_course.session.add(new_course)
         db_course.session.commit()
@@ -20,6 +21,7 @@ def create(course):
         abort(404 ,f"Course with course name {course_name} already exists")
 
 def read_one(course_name):
+    #This needs to be changed to include a search for the layout name
     course = Course.query.filter(Course.course_name == course_name).one_or_none()
     if course is not None:
         return course_schema.dump(course)
@@ -27,11 +29,14 @@ def read_one(course_name):
         abort(404, f"Course with course name {course_name} not found")
         
 def update(course_name, course):
+    #This will need to change to be able to update courses
     existing_course = Course.query.filter(Course.course_name == course_name).one_or_none()
     if existing_course:
         update_course = course_schema.load(course, session=db_course.session)
         existing_course.course_name = update_course.course_name
-        existing_course.layout = update_course.layout
+        existing_course.layout_name = update_course.layout_name
+        existing_course.par = update_course.par
+        existing_course.length = update_course.length
         existing_course.num_holes = update_course.num_holes
         existing_course.hole1_id = update_course.hole1_id
         existing_course.hole2_id = update_course.hole2_id

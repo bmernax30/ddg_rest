@@ -11,7 +11,7 @@ def create(hole):
     hole_id = hole.get("id")
     existing_hole = Hole.query.filter(Hole.id == hole_id).one_or_none()
 
-    if existing_hole is NONE:
+    if existing_hole is None:
         new_hole = hole_schema.load(hole, session=db_hole.session)
         db_hole.session.add(new_hole)
         db_hole.session.commit()
@@ -30,7 +30,8 @@ def update(hole_id, hole):
     existing_hole = Hole.query.filter(Hole.id == hole_id).one_or_none()
     if existing_hole:
         update_hole = hole_schema.load(hole, session=db_hole.session)
-        existing_hole.course_id = update_hole.course_id
+        existing_hole.course_name = update_hole.course_name
+        existing_hole.layout_name = update_hole.layout_name
         existing_hole.hole_number = update_hole.hole_number
         existing_hole.hole_par = update_hole.hole_par
         existing_hole.hole_distance = update_hole.hole_distance

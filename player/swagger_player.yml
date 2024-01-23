@@ -12,12 +12,14 @@ components:
     Player:
       type: "object"
       required:
-        - user_id
+        - username
       properties:
-        user_id:
+        local_id:
           type: "integer"
+        username:
+          type: "string"
         player_class:
-          type: "integer"
+          type: "string"
         total_holes:
           type: "integer"
         holes_played:
@@ -110,12 +112,12 @@ components:
       schema:
         type: "integer"
     user_id:
-      name: "user_id"
-      description: "Id of the user account in the player entry"
+      name: "user_name"
+      description: "Name of the user account in the player entry"
       in: path
       required: True
       schema:
-        type: "integer"
+        type: "string"
 
 paths:
   /players:

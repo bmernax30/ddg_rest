@@ -6,7 +6,8 @@ from config import ma_hole
 class Hole(db_hole.Model):
     __tablename__ = "hole"
     id = db_hole.Column(db_hole.Integer, primary_key=True)
-    course_id = db_hole.Column(db_hole.Integer)
+    course_name = db_hole.Column(db_hole.String(32))
+    layout_name = db_hole.Column(db_hole.String(32))
     hole_number = db_hole.Column(db_hole.Integer)
     hole_par = db_hole.Column(db_hole.Integer)
     hole_distance = db_hole.Column(db_hole.Integer)

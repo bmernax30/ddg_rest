@@ -7,7 +7,9 @@ class Course(db_course.Model):
     __tablename__ = "course"
     id = db_course.Column(db_course.Integer, primary_key=True)
     course_name = db_course.Column(db_course.String(32))
-    layout = db_course.Column(db_course.Integer)
+    layout_name = db_course.Column(db_course.String(32))
+    par = db_course.Column(db_course.Integer)
+    length = db_course.Column(db_course.Integer)
     num_holes = db_course.Column(db_course.Integer)
     hole1_id = db_course.Column(db_course.Integer)
     hole2_id = db_course.Column(db_course.Integer)
