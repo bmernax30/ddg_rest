@@ -14,9 +14,7 @@ columns = [
  	"hole_completed INTEGER",
 	]
 #Initialize Data
-holes_played = [
-	"0,1,1,4,1,0,0,0,1"
-	]
+holes_played = []
 #Create the database
 create_table_cmd = f"CREATE TABLE hole_played ({','.join(columns)})"
 conn.execute(create_table_cmd)

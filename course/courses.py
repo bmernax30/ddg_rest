@@ -20,13 +20,13 @@ def create(course):
     else:
         abort(404 ,f"Course with course name {course_name} already exists")
 
-def read_one(course_name):
+def read_one(course_id):
     #This needs to be changed to include a search for the layout name
-    course = Course.query.filter(Course.course_name == course_name).one_or_none()
+    course = Course.query.filter(Course.id == course_id).one_or_none()
     if course is not None:
         return course_schema.dump(course)
     else:
-        abort(404, f"Course with course name {course_name} not found")
+        abort(404, f"Course with course name {course_id} not found")
         
 def update(course_name, course):
     #This will need to change to be able to update courses

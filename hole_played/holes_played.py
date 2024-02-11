@@ -28,7 +28,6 @@ def read_one(hole_played_id):
         abort(404, f"Hole played with id {hole_played_id} not found")
         
 def update(hole_played_id, hole_played):
-    print("UPDATE HOLE")
     existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
     if existing_hole_played:
         update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)

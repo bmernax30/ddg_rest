@@ -134,14 +134,14 @@ paths:
       responses:
         "201":
           description: "Successfully created course"
-  /courses/{course_name}:
+  /courses/{course_id}:
     get:
       operationId: "courses.read_one"
       tags:
         - Courses
       summary: "Read one course"
       parameters:
-        - $ref: "#/components/parameters/course_name"
+        - $ref: "#/components/parameters/course_id"
       responses:
         "200":
           description: "Successfully read course"
