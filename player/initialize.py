@@ -50,7 +50,7 @@ columns = [
 	"hole36_id INTEGER",
 	]
 #Initialize Data
-players = []
+players = ["1,0,'','',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"]
 #Create the database
 create_table_cmd = f"CREATE TABLE player ({','.join(columns)})"
 conn.execute(create_table_cmd)

@@ -18,6 +18,10 @@ components:
           type: "string"
         layout:
           type: "integer"
+        length:
+          type: "integer"
+        par:
+          type: "integer"
         num_holes:
           type: "integer"
         hole1_id:
@@ -151,7 +155,7 @@ paths:
       operationId: "courses.update"
       summary: "Update a course"
       parameters:
-        - $ref: "#/components/parameters/course_name"
+        - $ref: "#/components/parameters/course_id"
       responses:
         "200":
           description: "Successfully updated course"
@@ -167,7 +171,7 @@ paths:
       operationId: "courses.delete"
       summary: "Delete a course"
       parameters:
-        - $ref: "#/components/parameters/course_name"
+        - $ref: "#/components/parameters/course_id"
       responses:
         "204":
           description: "Successfully deleted course"

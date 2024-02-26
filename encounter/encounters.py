@@ -30,6 +30,7 @@ def update(encounter_id, encounter):
     existing_encounter = Encounter.query.filter(Encounter.id == encounter_id).one_or_none()
     if existing_encounter:
         update_encounter = encounter_schema.load(encounter, session=db_encounter.session)
+        existing_encounter.encounter_description  = update_encounter.encounter_description
         existing_encounter.encounter_pool = update_encounter.encounter_pool
         existing_encounter.encounter_image = update_encounter.encounter_image
         existing_encounter.encounter_name = update_encounter.encounter_name

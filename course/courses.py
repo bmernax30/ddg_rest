@@ -9,8 +9,8 @@ def read_all():
 
 def create(course):
     #This needs to be changed for course create
-    course_name = course.get("course_name")
-    existing_course = Course.query.filter(Course.course_name == course_name).one_or_none()
+    course_id = course.get("id")
+    existing_course = Course.query.filter(Course.id == course_id).one_or_none()
 
     if existing_course is None:
         new_course = course_schema.load(course, session=db_course.session)
@@ -18,7 +18,7 @@ def create(course):
         db_course.session.commit()
         return course_schema.dump(new_course), 201
     else:
-        abort(404 ,f"Course with course name {course_name} already exists")
+        abort(404 ,f"Course with id {course} already exists")
 
 def read_one(course_id):
     #This needs to be changed to include a search for the layout name
@@ -26,11 +26,11 @@ def read_one(course_id):
     if course is not None:
         return course_schema.dump(course)
     else:
-        abort(404, f"Course with course name {course_id} not found")
+        abort(404, f"Course with course id {course_id} not found")
         
-def update(course_name, course):
+def update(course_id, course):
     #This will need to change to be able to update courses
-    existing_course = Course.query.filter(Course.course_name == course_name).one_or_none()
+    existing_course = Course.query.filter(Course.id == course_id).one_or_none()
     if existing_course:
         update_course = course_schema.load(course, session=db_course.session)
         existing_course.course_name = update_course.course_name
@@ -81,14 +81,14 @@ def update(course_name, course):
     else:
         abort(
             404,
-            f"Course with course name {course_name} not found"
+            f"Course with course name {course_id} not found"
         )
 
-def delete(course_name):
-    existing_course = Course.query.filter(Course.course_name == course_name).one_or_none()
+def delete(course_id):
+    existing_course = Course.query.filter(Course.id == course_id).one_or_none()
     if existing_course:
         db_course.session.delete(existing_course)
         db_course.session.commit()
-        return make_response(f"{course_name} successfully deleted", 200)
+        return make_response(f"{course_id} successfully deleted", 200)
     else:
-        abort(404,f"Course with course name {course_name} not found")
+        abort(404,f"Course with course name {course_id} not found")

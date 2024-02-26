@@ -12,12 +12,14 @@ components:
     Encounter:
       type: "object"
       properties:
+        encounter_description:
+          type: "string"
         encounter_pool:
           type: "integer"
         encounter_image:
-          type: "integer"
+          type: "string"
         encounter_name:
-          type: "integer"
+          type: "string"
         encounter_type:
           type: "integer"
         encounter_star:
@@ -26,93 +28,58 @@ components:
           type: "integer"
   
   parameters:
-    username:
-      name: "username"
-      description: "Username of the user to get"
-      in: path
-      required: True
-      schema:
-        type: "string"
-    course_name:
-      name: "course_name"
-      description: "Course name of the course entry"
-      in: path
-      required: True
-      schema:
-        type: "string"
-    course_id:
-      name: "course_id"
-      description: "The id representing the course being played in the game"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    game_id:
-      name: "game_id"
-      description: "The reference id of each game"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    game_mode:
-      name: "game_mode"
-      description: "The game mode being played in the current game"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    num_players:
-      name: "num_players"
-      description: "The number of players in the current game"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    player1_id:
-      name: "player1_id"
-      description: "Id of the first player in the game"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    player_id:
-      name: "player_id"
-      description: "Id to identify each player entry"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    user_id:
-      name: "user_id"
-      description: "Id of the user account in the player entry"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    hole_number:
-      name: "hole_number"
-      description: "Hole number on the course"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    hole_id:
-      name: "hole_id"
-      description: "ID for the hole entry data"
-      in: path
-      required: True
-      schema:
-        type: "integer"
-    holes_played_id:
-      name: "holes_played_id"
-      description: "Id for the hole played entry data"
-      in: path
-      required: True
-      schema:
-        type: "integer"
     encounter_id:
       name: "encounter_id"
-      description: "Id for the encounter entry"
+      description: "Id of the encounter."
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    encounter_description:
+      name: "description"
+      description: "Description of how to fight encounter."
+      in: path
+      required: True
+      schema:
+        type: "string"
+    encounter_pool:
+      name: "encounter_pool"
+      description: "A way of dividing up encounter difficulty"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    encounter_image:
+      name: "encounter_image"
+      description: "Title of the image file for the monster"
+      in: path
+      required: True
+      schema:
+        type: "string"
+    encounter_name:
+      name: "encounter_name"
+      description: "Name of the encounter monster"
+      in: path
+      required: True
+      schema:
+        type: "string"
+    encounter_type:
+      name: "encounter_type"
+      description: "The type of encounter monster, room, chest."
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    encounter_star:
+      name: "encounter_star"
+      description: "The star level of the monster"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    encounter_reqard_code:
+      name: "encounter_reward_code"
+      description: "Reqard for defeating the encounter"
       in: path
       required: True
       schema:

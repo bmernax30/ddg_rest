@@ -6,6 +6,7 @@ from config import ma_encounter
 class Encounter(db_encounter.Model):
     __tablename__ = "encounter"
     id = db_encounter.Column(db_encounter.Integer, primary_key=True)
+    encounter_description = db_encounter.Column(db_encounter.String(128))
     encounter_pool = db_encounter.Column(db_encounter.Integer)
     encounter_image = db_encounter.Column(db_encounter.String(32))
     encounter_name = db_encounter.Column(db_encounter.String(32))

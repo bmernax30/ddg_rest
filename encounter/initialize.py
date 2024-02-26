@@ -4,6 +4,7 @@ import sqlite3
 conn = sqlite3.connect("encounters.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
+	"encounter_description VARCHAR",
  	"encounter_pool INTEGER",
 	"encounter_image VARCHAR",
 	"encounter_name VARCHAR",
@@ -13,7 +14,7 @@ columns = [
 	]
 #Initialize Data
 encounters = [
-	"1,0,'mrt1','Bush of Snare',1,1,1"
+	"1,'Im a monster!',0,'mrt1','Bush of Snare',1,1,1"
 	]
 #Create the database
 create_table_cmd = f"CREATE TABLE encounter ({','.join(columns)})"
