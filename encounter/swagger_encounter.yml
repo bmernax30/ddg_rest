@@ -12,6 +12,8 @@ components:
     Encounter:
       type: "object"
       properties:
+        encounter_challenge:
+          type: "string"
         encounter_description:
           type: "string"
         encounter_pool:
@@ -35,9 +37,16 @@ components:
       required: True
       schema:
         type: "integer"
-    encounter_description:
-      name: "description"
+    encounter_challenge:
+      name: "encounter_challenge"
       description: "Description of how to fight encounter."
+      in: path
+      required: True
+      schema:
+        type: "string"
+    encounter_description:
+      name: "encounter_description"
+      description: "Description of the lore of the encounter."
       in: path
       required: True
       schema:

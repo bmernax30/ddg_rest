@@ -11,7 +11,7 @@ def create(encounter):
     encounter_id = encounter.get("id")
     existing_encounter = Encounter.query.filter(Encounter.id == encounter_id).one_or_none()
 
-    if existing_encounter is NONE:
+    if existing_encounter is None:
         new_encounter = encounter_schema.load(encounter, session=db_encounter.session)
         db_encounter.session.add(new_encounter)
         db_encounter.session.commit()
@@ -30,6 +30,7 @@ def update(encounter_id, encounter):
     existing_encounter = Encounter.query.filter(Encounter.id == encounter_id).one_or_none()
     if existing_encounter:
         update_encounter = encounter_schema.load(encounter, session=db_encounter.session)
+        existing_encounter.encounter_challenge = update_encounter.encounter_challenge
         existing_encounter.encounter_description  = update_encounter.encounter_description
         existing_encounter.encounter_pool = update_encounter.encounter_pool
         existing_encounter.encounter_image = update_encounter.encounter_image
