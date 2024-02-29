@@ -1,7 +1,7 @@
 import sqlite3
 
 #Table Parameters
-conn = sqlite3.connect("players.db")
+conn = sqlite3.connect("/home/bmernax30/Documents/ddg_rest/player/players.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
  	"local_id INTEGER",

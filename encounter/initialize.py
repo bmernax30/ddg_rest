@@ -1,7 +1,7 @@
 import sqlite3
 
 #Table Parameters
-conn = sqlite3.connect("encounters.db")
+conn = sqlite3.connect("/home/bmernax30/Documents/ddg_rest/encounter/encounters.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
  	"encounter_challenge VARCHAR",

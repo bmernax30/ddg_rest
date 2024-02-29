@@ -1,7 +1,7 @@
 import sqlite3
 
 #Table Parameters
-conn = sqlite3.connect("courses.db")
+conn = sqlite3.connect("/home/bmernax30/Documents/ddg_rest/course/courses.db")
 columns = [
 	"id INTEGER PRIMARY KEY",
  	"course_name VARCHAR",
