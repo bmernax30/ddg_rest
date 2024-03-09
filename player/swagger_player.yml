@@ -30,6 +30,8 @@ components:
           type: "integer"
         player_stars:
           type: "integer"
+        player_dungeon_level:
+          type: "integer"
         hole1_id:
           type: "integer"
         hole2_id:

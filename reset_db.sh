@@ -6,6 +6,7 @@ hole="hole"
 hole_played="hole_played"
 player="player"
 user="user"
+dungeon="dungeon"
 saved_courses="saved_courses"
 saved_games="saved_games"
 if [ $1 = $course ];
@@ -57,6 +58,13 @@ then
     rm /home/bmernax30/Documents/ddg_rest/user/users.db
     nohup python /home/bmernax30/Documents/ddg_rest/user/initialize.py
 fi
+if [ $1 = $dungeon ];
+then
+    echo "Delete dungeon.db"
+    #Delete dungeon db
+    rm /home/bmernax30/Documents/ddg_rest/dungeon/dungeons.db
+    nohup python /home/bmernax30/Documents/ddg_rest/dungeon/initialize.py
+fi
 if [ $1 = $saved_games ];
 then
     echo "Delete game.db"
@@ -73,6 +81,12 @@ then
     #Delete hole played db
     rm /home/bmernax30/Documents/ddg_rest/hole_played/holes_played.db
     python /home/bmernax30/Documents/ddg_rest/hole_played/initialize.py
+
+    echo "Delete dungeon.db"
+    #Delete dungeon db
+    rm /home/bmernax30/Documents/ddg_rest/dungeon/dungeons.db
+    nohup python /home/bmernax30/Documents/ddg_rest/dungeon/initialize.py
+fi
 fi
 if [ $1 = $saved_courses ];
 then

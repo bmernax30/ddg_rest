@@ -12,6 +12,7 @@ columns = [
   	"player_score INTEGER",
   	"player_active INTEGER",
   	"player_stars INTEGER",
+	"player_dungeon_level INTEGER",
 	"hole1_id INTEGER",
 	"hole2_id INTEGER",
 	"hole3_id INTEGER",
@@ -50,7 +51,7 @@ columns = [
 	"hole36_id INTEGER",
 	]
 #Initialize Data
-players = ["1,0,'','',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"]
+players = ["1,0,'','',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"]
 #Create the database
 create_table_cmd = f"CREATE TABLE player ({','.join(columns)})"
 conn.execute(create_table_cmd)

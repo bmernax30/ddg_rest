@@ -28,3 +28,7 @@ deactivate
 source /home/bmernax30/Documents/ddg_rest/user/user_env/bin/activate
 nohup python -u /home/bmernax30/Documents/ddg_rest/user/app.py > /home/bmernax30/Documents/ddg_rest/user/user.log &
 deactivate
+#Launch Dungeon Database
+source /home/bmernax30/Documents/ddg_rest/dungeon/dungeon_venv/bin/activate
+nohup python -u /home/bmernax30/Documents/ddg_rest/dungeon/app.py > /home/bmernax30/Documents/ddg_rest/dungeon/dungeon.log &
+deactivate

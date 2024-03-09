@@ -38,6 +38,7 @@ def update(player_id, player):
         existing_player.player_score = update_player.player_score
         existing_player.player_active = update_player.player_active
         existing_player.player_stars = update_player.player_stars
+        existing_player.player_dungeon_level = update_player.player_dungeon_level
         existing_player.hole1_id = update_player.hole1_id
         existing_player.hole2_id = update_player.hole2_id
         existing_player.hole3_id = update_player.hole3_id

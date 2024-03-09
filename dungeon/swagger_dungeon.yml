@@ -1,0 +1,430 @@
+openapi: 3.0.0
+info:
+  title: "DDG Dungeon REST Api"
+  description: "An API for getting dungeon information"
+  version: "1.0.0"
+
+servers:
+  - url: "/api"
+
+components:
+  schemas:
+    Dungeon:
+      type: "object"
+      properties:
+        dungeon_name:
+          type: "string"
+        dungeon_difficulty:
+          type: "string"
+        lvl_1:
+          type: "integer"
+        lvl_2:
+          type: "integer"
+        lvl_3:
+          type: "integer"
+        lvl_4:
+          type: "integer"
+        lvl_5:
+          type: "integer"
+        lvl_6:
+          type: "integer"
+        lvl_7:
+          type: "integer"
+        lvl_8:
+          type: "integer"
+        lvl_9:
+          type: "integer"
+        lvl_10:
+          type: "integer"
+        lvl_11:
+          type: "integer"
+        lvl_12:
+          type: "integer"
+        lvl_13:
+          type: "integer"
+        lvl_14:
+          type: "integer"
+        lvl_15:
+          type: "integer"
+        lvl_16:
+          type: "integer"
+        lvl_17:
+          type: "integer"
+        lvl_18:
+          type: "integer"
+        lvl_19:
+          type: "integer"
+        lvl_20:
+          type: "integer"
+        lvl_21:
+          type: "integer"
+        lvl_22:
+          type: "integer"
+        lvl_23:
+          type: "integer"
+        lvl_24:
+          type: "integer"
+        lvl_25:
+          type: "integer"
+        lvl_26:
+          type: "integer"
+        lvl_27:
+          type: "integer"
+        lvl_28:
+          type: "integer"
+        lvl_29:
+          type: "integer"
+        lvl_30:
+          type: "integer"
+        lvl_31:
+          type: "integer"
+        lvl_32:
+          type: "integer"
+        lvl_33:
+          type: "integer"
+        lvl_34:
+          type: "integer"
+        lvl_35:
+          type: "integer"
+        lvl_36:
+          type: "integer"
+  
+  parameters:
+    dungeon_id:
+      name: "dungeon_id"
+      description: "Id of the dungeon."
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    dungeon_name:
+      name: "dungeon_name"
+      description: "Randomly Generated name of dungeon."
+      in: path
+      required: True
+      schema:
+        type: "string"
+    dungeon_difficulty:
+      name: "dungeon_difficulty"
+      description: "Easy, Medium or Hard dungeon based on play testing."
+      in: path
+      required: True
+      schema:
+        type: "string"
+    lvl_1:
+      name: "lvl_1"
+      description: "ID of Lvl 1 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_2:
+      name: "lvl_2"
+      description: "ID of Lvl 2 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_3:
+      name: "lvl_3"
+      description: "ID of Lvl 3 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_4:
+      name: "lvl_4"
+      description: "ID of Lvl 4 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_5:
+      name: "lvl_5"
+      description: "ID of Lvl 5 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_6:
+      name: "lvl_6"
+      description: "ID of Lvl 6 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_7:
+      name: "lvl_7"
+      description: "ID of Lvl 7 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_8:
+      name: "lvl_8"
+      description: "ID of Lvl 8 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_9:
+      name: "lvl_9"
+      description: "ID of Lvl 9 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_10:
+      name: "lvl_10"
+      description: "ID of Lvl 10 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_11:
+      name: "lvl_11"
+      description: "ID of Lvl 11 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_12:
+      name: "lvl_12"
+      description: "ID of Lvl 12 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_13:
+      name: "lvl_13"
+      description: "ID of Lvl 13 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_14:
+      name: "lvl_14"
+      description: "ID of Lvl 14 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_15:
+      name: "lvl_15"
+      description: "ID of Lvl 15 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_16:
+      name: "lvl_16"
+      description: "ID of Lvl 16 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_17:
+      name: "lvl_17"
+      description: "ID of Lvl 17 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_18:
+      name: "lvl_18"
+      description: "ID of Lvl 18 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_19:
+      name: "lvl_19"
+      description: "ID of Lvl 19 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_20:
+      name: "lvl_20"
+      description: "ID of Lvl 20 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_21:
+      name: "lvl_21"
+      description: "ID of Lvl 21 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_22:
+      name: "lvl_22"
+      description: "ID of Lvl 22 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_23:
+      name: "lvl_23"
+      description: "ID of Lvl 23 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_24:
+      name: "lvl_24"
+      description: "ID of Lvl 24 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_25:
+      name: "lvl_25"
+      description: "ID of Lvl 25 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_26:
+      name: "lvl_26"
+      description: "ID of Lvl 26 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_27:
+      name: "lvl_27"
+      description: "ID of Lvl 27 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_28:
+      name: "lvl_28"
+      description: "ID of Lvl 28 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_29:
+      name: "lvl_29"
+      description: "ID of Lvl 29 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_30:
+      name: "lvl_30"
+      description: "ID of Lvl 30 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_31:
+      name: "lvl_31"
+      description: "ID of Lvl 31 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_32:
+      name: "lvl_32"
+      description: "ID of Lvl 32 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_33:
+      name: "lvl_33"
+      description: "ID of Lvl 33 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_34:
+      name: "lvl_34"
+      description: "ID of Lvl 34 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_35:
+      name: "lvl_35"
+      description: "ID of Lvl 35 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+    lvl_36:
+      name: "lvl_36"
+      description: "ID of Lvl 36 Encounter"
+      in: path
+      required: True
+      schema:
+        type: "integer"
+
+paths:
+  /dungeons:
+    get:
+      operationId: "dungeons.read_all"
+      tags:
+        - "Dungeons"
+      summary: "Read the list of dungeons"
+      responses:
+        "200":
+          description: "Successfully read dungeons list"
+    post:
+      operationId: "dungeons.create"
+      tags:
+        - Dungeons
+      summary: "Create an dungeon"
+      requestBody:
+          description: "Dungeon to create"
+          required: True
+          content:
+            application/json:
+              schema:
+                x-body-name: "dungeon"
+                $ref: "#/components/schemas/Dungeon"
+      responses:
+        "201":
+          description: "Successfully created dungeon"
+  /dungeons/{dungeon_id}:
+    get:
+      operationId: "dungeons.read_one"
+      tags:
+        - Dungeons
+      summary: "Read one dungeon"
+      parameters:
+        - $ref: "#/components/parameters/dungeon_id"
+      responses:
+        "200":
+          description: "Successfully read dungeon"
+    put:
+      tags:
+        - Dungeons
+      operationId: "dungeons.update"
+      summary: "Update an dungeon"
+      parameters:
+        - $ref: "#/components/parameters/dungeon_id"
+      responses:
+        "200":
+          description: "Successfully updated an dungeon"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "dungeon"
+              $ref: "#/components/schemas/Dungeon"
+    delete:
+      tags:
+        - Dungeons
+      operationId: "dungeons.delete"
+      summary: "Delete an dungeon"
+      parameters:
+        - $ref: "#/components/parameters/dungeon_id"
+      responses:
+        "204":
+          description: "Successfully deleted an dungeon"
+  

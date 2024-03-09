@@ -1,0 +1,22 @@
+<!-- templates/home_encounter.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DDG Rest API</title>
+</head>
+<body>
+    <h1>
+        DDG Encounters Main Page!
+    </h1>
+    <ul>
+        {% for encounter in encounters %}
+        <li>
+            {{ encounter.encounter_pool }} {{ encounter.encounter_image}} {{ encounter.encounter_name}}
+            {{ encounter.encounter_type }} {{ encounter.encounter_star}} {{ encounter.encounter_reward_code}}
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
