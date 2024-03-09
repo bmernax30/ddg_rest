@@ -6,7 +6,7 @@ columns = [
 	"id INTEGER PRIMARY KEY",
  	"dungeon_name VARCHAR",
   	"dungeon_difficulty VARCHAR",
-    "num_levels INTEGER"
+    "num_levels INTEGER",
    	"lvl_1 INTEGER",
     "lvl_2 INTEGER",
     "lvl_3 INTEGER",
