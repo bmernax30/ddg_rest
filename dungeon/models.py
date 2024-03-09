@@ -8,6 +8,7 @@ class Dungeon(db_dungeon.Model):
     id = db_dungeon.Column(db_dungeon.Integer, primary_key=True)
     dungeon_name = db_dungeon.Column(db_dungeon.String(32))
     dungeon_difficulty = db_dungeon.Column(db_dungeon.String(32))
+    num_levels = db_dungeon.Column(db_dungeon.Integer)
     lvl_1 = db_dungeon.Column(db_dungeon.Integer)
     lvl_2 = db_dungeon.Column(db_dungeon.Integer)
     lvl_3 = db_dungeon.Column(db_dungeon.Integer)

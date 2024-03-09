@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
+#Delete if Running
+nohup python -u /home/bmernax30/Documents/ddg_rest/stop_db.py
+sleep 0.5
+
 #Launch Course Database
 source /home/bmernax30/Documents/ddg_rest/course/course_env/bin/activate
 nohup python -u /home/bmernax30/Documents/ddg_rest/course/app.py > /home/bmernax30/Documents/ddg_rest/course/course.log &

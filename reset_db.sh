@@ -85,8 +85,7 @@ then
     echo "Delete dungeon.db"
     #Delete dungeon db
     rm /home/bmernax30/Documents/ddg_rest/dungeon/dungeons.db
-    nohup python /home/bmernax30/Documents/ddg_rest/dungeon/initialize.py
-fi
+    python /home/bmernax30/Documents/ddg_rest/dungeon/initialize.py
 fi
 if [ $1 = $saved_courses ];
 then

@@ -32,6 +32,7 @@ def update(dungeon_id, dungeon):
         update_dungeon = dungeon_schema.load(dungeon, session=db_dungeon.session)
         existing_dungeon.dungeon_name = update_dungeon.dungeon_name
         existing_dungeon.dungeon_difficulty  = update_dungeon.dungeon_difficulty
+        existing_dungeon.num_levels = update_dungeon.num_levels
         existing_dungeon.lvl_1 = update_dungeon.lvl_1
         existing_dungeon.lvl_2 = update_dungeon.lvl_2
         existing_dungeon.lvl_3 = update_dungeon.lvl_3

@@ -16,6 +16,8 @@ components:
           type: "string"
         dungeon_difficulty:
           type: "string"
+        num_levels:
+          type: "integer"
         lvl_1:
           type: "integer"
         lvl_2:
@@ -111,6 +113,13 @@ components:
       required: True
       schema:
         type: "string"
+    num_levels:
+      name: "num_levels"
+      description: "Number of levels in dungeon"
+      in: path
+      required: True
+      schema:
+        type: "integer"
     lvl_1:
       name: "lvl_1"
       description: "ID of Lvl 1 Encounter"
