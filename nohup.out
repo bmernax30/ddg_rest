@@ -64,3 +64,131 @@ Name: /home/bmernax30/Documents/ddg_rest/player/player_venv PID: 201748
 Kill PlayerVENV!
 Name: /home/bmernax30/Documents/ddg_rest/user/user_env PID: 201733
 Kill UserVENV!
+Name: python -u /home/bmernax30/Documents/ddg_rest/course/app.py PID: 201848
+Kill CourseDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/dungeon/app.py PID: 201855
+Kill DungeonDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/encounter/app.py PID: 201849
+Kill EncounterDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/game/app.py PID: 201850
+Kill GameDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole/app.py PID: 201851
+Kill HoleDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole_played/app.py PID: 201852
+Kill HolePlayedDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/player/app.py PID: 201853
+Kill PlayerDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/user/app.py PID: 201854
+Kill UserDB!
+Name: /home/bmernax30/Documents/ddg_rest/course/course_env PID: 201912
+Kill CourseVENV!
+Name: /home/bmernax30/Documents/ddg_rest/dungeon/dungeon_venv PID: 202735
+Kill DungeonVENV!
+Name: /home/bmernax30/Documents/ddg_rest/encounter/encounter_env PID: 201913
+Kill EncounterVENV!
+Name: /home/bmernax30/Documents/ddg_rest/game/game_env PID: 201909
+Kill GameVENV!
+Name: /home/bmernax30/Documents/ddg_rest/hole/hole_env PID: 201911
+Kill HoleVENV!
+Name: /home/bmernax30/Documents/ddg_rest/hole_played/hole_played_venv PID: 201914
+Kill HolePlayedVENV!
+Name: /home/bmernax30/Documents/ddg_rest/player/player_venv PID: 207388
+Kill PlayerVENV!
+Name: /home/bmernax30/Documents/ddg_rest/user/user_env PID: 201908
+Kill UserVENV!
+Name: python -u /home/bmernax30/Documents/ddg_rest/course/app.py PID: NOT FOUND
+CourseDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/dungeon/app.py PID: NOT FOUND
+DungeonDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/encounter/app.py PID: NOT FOUND
+EncounterDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/game/app.py PID: NOT FOUND
+GameDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole/app.py PID: NOT FOUND
+HoleDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole_played/app.py PID: NOT FOUND
+HolePlayedDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/player/app.py PID: NOT FOUND
+PlayerDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/user/app.py PID: NOT FOUND
+UsereDB already dead.
+Name: /home/bmernax30/Documents/ddg_rest/course/course_env PID: NOT FOUND
+CourseVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/dungeon/dungeon_venv PID: NOT FOUND
+DungeonVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/encounter/encounter_env PID: NOT FOUND
+EncounterVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/game/game_env PID: NOT FOUND
+GameVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/hole/hole_env PID: NOT FOUND
+HoleVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/hole_played/hole_played_venv PID: NOT FOUND
+HolePlayedVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/player/player_venv PID: NOT FOUND
+PlayerVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/user/user_env PID: NOT FOUND
+UserVENV already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/course/app.py PID: 207682
+Kill CourseDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/dungeon/app.py PID: 207689
+Kill DungeonDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/encounter/app.py PID: 207683
+Kill EncounterDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/game/app.py PID: 207684
+Kill GameDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole/app.py PID: 207685
+Kill HoleDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole_played/app.py PID: 207686
+Kill HolePlayedDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/player/app.py PID: 207687
+Kill PlayerDB!
+Name: python -u /home/bmernax30/Documents/ddg_rest/user/app.py PID: 207688
+Kill UserDB!
+Name: /home/bmernax30/Documents/ddg_rest/course/course_env PID: 207739
+Kill CourseVENV!
+Name: /home/bmernax30/Documents/ddg_rest/dungeon/dungeon_venv PID: 207745
+Kill DungeonVENV!
+Name: /home/bmernax30/Documents/ddg_rest/encounter/encounter_env PID: 207738
+Kill EncounterVENV!
+Name: /home/bmernax30/Documents/ddg_rest/game/game_env PID: 207744
+Kill GameVENV!
+Name: /home/bmernax30/Documents/ddg_rest/hole/hole_env PID: 207742
+Kill HoleVENV!
+Name: /home/bmernax30/Documents/ddg_rest/hole_played/hole_played_venv PID: 207741
+Kill HolePlayedVENV!
+Name: /home/bmernax30/Documents/ddg_rest/player/player_venv PID: 207743
+Kill PlayerVENV!
+Name: /home/bmernax30/Documents/ddg_rest/user/user_env PID: 207740
+Kill UserVENV!
+Name: python -u /home/bmernax30/Documents/ddg_rest/course/app.py PID: NOT FOUND
+CourseDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/dungeon/app.py PID: NOT FOUND
+DungeonDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/encounter/app.py PID: NOT FOUND
+EncounterDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/game/app.py PID: NOT FOUND
+GameDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole/app.py PID: NOT FOUND
+HoleDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/hole_played/app.py PID: NOT FOUND
+HolePlayedDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/player/app.py PID: NOT FOUND
+PlayerDB already dead.
+Name: python -u /home/bmernax30/Documents/ddg_rest/user/app.py PID: NOT FOUND
+UsereDB already dead.
+Name: /home/bmernax30/Documents/ddg_rest/course/course_env PID: NOT FOUND
+CourseVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/dungeon/dungeon_venv PID: NOT FOUND
+DungeonVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/encounter/encounter_env PID: NOT FOUND
+EncounterVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/game/game_env PID: NOT FOUND
+GameVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/hole/hole_env PID: NOT FOUND
+HoleVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/hole_played/hole_played_venv PID: NOT FOUND
+HolePlayedVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/player/player_venv PID: NOT FOUND
+PlayerVENV already dead.
+Name: /home/bmernax30/Documents/ddg_rest/user/user_env PID: NOT FOUND
+UserVENV already dead.

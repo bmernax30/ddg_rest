@@ -14,6 +14,7 @@ class Player(db_player.Model):
     player_score = db_player.Column(db_player.Integer)
     player_active = db_player.Column(db_player.Integer)
     player_stars = db_player.Column(db_player.Integer)
+    player_dungeon_map = db_player.Column(db_player.Integer)
     player_dungeon_level = db_player.Column(db_player.Integer)
     hole1_id = db_player.Column(db_player.Integer)
     hole2_id = db_player.Column(db_player.Integer)
