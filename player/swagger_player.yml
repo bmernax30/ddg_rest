@@ -106,6 +106,8 @@ components:
           type: "integer"
         hole36_id:
           type: "integer"
+        badge_id:
+          type: "integer"
 
   parameters:
     player_id:
@@ -186,3 +188,88 @@ paths:
       responses:
         "204":
           description: "Successfully deleted player"
+  /players/player_score/{player_id}:
+    put:
+      tags:
+        - Players
+      operationId: "players.update_player_score"
+      summary: "Update a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully updated player"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "player"
+              $ref: "#/components/schemas/Player"
+  /players/player_active/{player_id}:
+    put:
+      tags:
+        - Players
+      operationId: "players.update_player_active"
+      summary: "Update a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully updated player"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "player"
+              $ref: "#/components/schemas/Player"
+  /players/player_stars/{player_id}:
+    put:
+      tags:
+        - Players
+      operationId: "players.update_player_stars"
+      summary: "Update a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully updated player"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "player"
+              $ref: "#/components/schemas/Player"
+  /players/player_dungeon_level/{player_id}:
+    put:
+      tags:
+        - Players
+      operationId: "players.update_player_dungeon_level"
+      summary: "Update a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully updated player"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "player"
+              $ref: "#/components/schemas/Player"
+  /players/holes_played/{player_id}:
+    put:
+      tags:
+        - Players
+      operationId: "players.update_holes_played"
+      summary: "Update a player"
+      parameters:
+        - $ref: "#/components/parameters/player_id"
+      responses:
+        "200":
+          description: "Successfully updated player"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "player"
+              $ref: "#/components/schemas/Player"

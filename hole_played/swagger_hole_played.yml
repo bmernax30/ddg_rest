@@ -110,3 +110,105 @@ paths:
       responses:
         "204":
           description: "Successfully deleted hole played"
+  /holes_played/strokes/{hole_played_id}:
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update_strokes"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/hole_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"
+  /holes_played/passive_used/{hole_played_id}:
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update_passive_used"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/hole_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"
+  /holes_played/active_used/{hole_played_id}:
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update_active_used"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/hole_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"
+  /holes_played/encounter_id/{hole_played_id}:
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update_encounter_id"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/hole_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"
+  /holes_played/encounter_defeated/{hole_played_id}:
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update_encounter_defeated"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/hole_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"
+  /holes_played/hole_completed/{hole_played_id}:
+    put:
+      tags:
+        - Holes_Played
+      operationId: "holes_played.update_hole_completed"
+      summary: "Update a hole played"
+      parameters:
+        - $ref: "#/components/parameters/hole_played_id"
+      responses:
+        "200":
+          description: "Successfully updated hole played"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "hole_played"
+              $ref: "#/components/schemas/Hole_Played"

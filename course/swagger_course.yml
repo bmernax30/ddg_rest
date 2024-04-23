@@ -16,8 +16,8 @@ components:
       properties:
         course_name:
           type: "string"
-        layout:
-          type: "integer"
+        layout_name:
+          type: "string"
         length:
           type: "integer"
         par:
@@ -175,3 +175,20 @@ paths:
       responses:
         "204":
           description: "Successfully deleted course"
+  /courses/length/{course_id}:
+    put:
+      tags:
+        - Courses
+      operationId: "courses.update_length"
+      summary: "Update a course"
+      parameters:
+        - $ref: "#/components/parameters/course_id"
+      responses:
+        "200":
+          description: "Successfully updated course"
+      requestBody:
+        content:
+          application/json:
+            schema:
+              x-body-name: "course"
+              $ref: "#/components/schemas/Course"

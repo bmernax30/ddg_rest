@@ -57,3 +57,91 @@ def delete(hole_played_id):
         return make_response(f"{hole_played_id} successfully deleted", 200)
     else:
         abort(404,f"Hole played with id {hole_played_id} not found")
+
+def update_strokes(hole_played_id, hole_played):
+    existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
+    if existing_hole_played:
+        update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)
+        existing_hole_played.strokes = update_hole_played.strokes
+        db_hole_played.session.merge(existing_hole_played)
+        db_hole_played.session.commit()
+        return hole_played_schema.dump(existing_hole_played), 201
+
+    else:
+        abort(
+            404,
+            f"Hole played with id {hole_played_id} not found"
+        )
+def update_passive_used(hole_played_id, hole_played):
+    existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
+    if existing_hole_played:
+        update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)
+        existing_hole_played.passive_used = update_hole_played.passive_used
+        db_hole_played.session.merge(existing_hole_played)
+        db_hole_played.session.commit()
+        return hole_played_schema.dump(existing_hole_played), 201
+
+    else:
+        abort(
+            404,
+            f"Hole played with id {hole_played_id} not found"
+        )
+def update_active_used(hole_played_id, hole_played):
+    existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
+    if existing_hole_played:
+        print("HERE!")
+        update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)
+        print(existing_hole_played.active_used)
+        print(update_hole_played.active_used)
+        existing_hole_played.active_used = update_hole_played.active_used
+        db_hole_played.session.merge(existing_hole_played)
+        db_hole_played.session.commit()
+        return hole_played_schema.dump(existing_hole_played), 201
+
+    else:
+        abort(
+            404,
+            f"Hole played with id {hole_played_id} not found"
+        )
+def update_encounter_id(hole_played_id, hole_played):
+    existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
+    if existing_hole_played:
+        update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)
+        existing_hole_played.encounter_id = update_hole_played.encounter_id
+        db_hole_played.session.merge(existing_hole_played)
+        db_hole_played.session.commit()
+        return hole_played_schema.dump(existing_hole_played), 201
+
+    else:
+        abort(
+            404,
+            f"Hole played with id {hole_played_id} not found"
+        )
+def update_encounter_defeated(hole_played_id, hole_played):
+    existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
+    if existing_hole_played:
+        update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)
+        existing_hole_played.encounter_defeated = update_hole_played.encounter_defeated
+        db_hole_played.session.merge(existing_hole_played)
+        db_hole_played.session.commit()
+        return hole_played_schema.dump(existing_hole_played), 201
+
+    else:
+        abort(
+            404,
+            f"Hole played with id {hole_played_id} not found"
+        )
+def update_hole_completed(hole_played_id, hole_played):
+    existing_hole_played = HolePlayed.query.filter(HolePlayed.id == hole_played_id).one_or_none()
+    if existing_hole_played:
+        update_hole_played = hole_played_schema.load(hole_played, session=db_hole_played.session)
+        existing_hole_played.hole_completed = update_hole_played.hole_completed
+        db_hole_played.session.merge(existing_hole_played)
+        db_hole_played.session.commit()
+        return hole_played_schema.dump(existing_hole_played), 201
+
+    else:
+        abort(
+            404,
+            f"Hole played with id {hole_played_id} not found"
+        )

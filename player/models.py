@@ -52,6 +52,7 @@ class Player(db_player.Model):
     hole34_id = db_player.Column(db_player.Integer)
     hole35_id = db_player.Column(db_player.Integer)
     hole36_id = db_player.Column(db_player.Integer)
+    badge_id = db_player.Column(db_player.Integer)
 
 class PlayerSchema(ma_player.SQLAlchemyAutoSchema):
     class Meta:

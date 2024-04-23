@@ -50,9 +50,10 @@ columns = [
 	"hole34_id INTEGER",
 	"hole35_id INTEGER",
 	"hole36_id INTEGER",
+	"badge_id INTEGER",
 	]
 #Initialize Data
-players = ["1,0,'','',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"]
+players = ["1,0,'','',0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0"]
 #Create the database
 create_table_cmd = f"CREATE TABLE player ({','.join(columns)})"
 conn.execute(create_table_cmd)

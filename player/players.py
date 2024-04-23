@@ -75,6 +75,8 @@ def update(player_id, player):
         existing_player.hole33_id = update_player.hole33_id
         existing_player.hole34_id = update_player.hole34_id
         existing_player.hole35_id = update_player.hole35_id
+        existing_player.hole36_id = update_player.hole36_id
+        existing_player.badge_id = update_player.badge_id
 
         db_player.session.merge(existing_player)
         db_player.session.commit()
@@ -94,3 +96,75 @@ def delete(player_id):
         return make_response(f"{player_id} successfully deleted", 200)
     else:
         abort(404,f"Player with id {player_id} not found")
+        
+def update_player_score(player_id, player):
+    existing_player = Player.query.filter(Player.id == player_id).one_or_none()
+    if existing_player:
+        update_player = player_schema.load(player, session=db_player.session)
+        existing_player.player_score = update_player.player_score
+        db_player.session.merge(existing_player)
+        db_player.session.commit()
+        return player_schema.dump(existing_player), 201
+
+    else:
+        abort(
+            404,
+            f"Player with id {player_id} not found"
+        )
+def update_player_active(player_id, player):
+    existing_player = Player.query.filter(Player.id == player_id).one_or_none()
+    if existing_player:
+        print("HERE")
+        update_player = player_schema.load(player, session=db_player.session)
+        existing_player.player_active = update_player.player_active
+        db_player.session.merge(existing_player)
+        db_player.session.commit()
+        return player_schema.dump(existing_player), 201
+
+    else:
+        abort(
+            404,
+            f"Player with id {player_id} not found"
+        )
+def update_player_stars(player_id, player):
+    existing_player = Player.query.filter(Player.id == player_id).one_or_none()
+    if existing_player:
+        update_player = player_schema.load(player, session=db_player.session)
+        existing_player.player_stars = update_player.player_stars
+        db_player.session.merge(existing_player)
+        db_player.session.commit()
+        return player_schema.dump(existing_player), 201
+
+    else:
+        abort(
+            404,
+            f"Player with id {player_id} not found"
+        )
+def update_player_dungeon_level(player_id, player):
+    existing_player = Player.query.filter(Player.id == player_id).one_or_none()
+    if existing_player:
+        update_player = player_schema.load(player, session=db_player.session)
+        existing_player.player_dungeon_level = update_player.player_dungeon_level
+        db_player.session.merge(existing_player)
+        db_player.session.commit()
+        return player_schema.dump(existing_player), 201
+
+    else:
+        abort(
+            404,
+            f"Player with id {player_id} not found"
+        )
+def update_holes_played(player_id, player):
+    existing_player = Player.query.filter(Player.id == player_id).one_or_none()
+    if existing_player:
+        update_player = player_schema.load(player, session=db_player.session)
+        existing_player.holes_played = update_player.holes_played
+        db_player.session.merge(existing_player)
+        db_player.session.commit()
+        return player_schema.dump(existing_player), 201
+
+    else:
+        abort(
+            404,
+            f"Player with id {player_id} not found"
+        )

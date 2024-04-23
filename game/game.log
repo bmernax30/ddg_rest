@@ -2702,3 +2702,1752 @@ jinja2.exceptions.UndefinedError: 'encounter' is undefined
 199.241.27.12 - - [19/Apr/2024 05:11:42] "[35m[1mPUT /api/games/OQW6S HTTP/1.1[0m" 201 -
 199.241.27.12 - - [19/Apr/2024 05:11:42] "GET /api/games/OQW6S HTTP/1.1" 200 -
 199.241.27.12 - - [19/Apr/2024 05:11:48] "GET /api/games HTTP/1.1" 200 -
+5.196.102.74 - - [19/Apr/2024 05:33:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+194.165.16.76 - - [19/Apr/2024 06:50:23] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+194.165.16.76 - - [19/Apr/2024 06:50:23] "[31m[1m  /*à     Cookie: mstshash=Administr[0m" 400 -
+64.62.197.149 - - [19/Apr/2024 07:14:27] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+64.62.197.149 - - [19/Apr/2024 07:14:44] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+64.62.197.151 - - [19/Apr/2024 07:14:48] "[35m[1mGET http://api.ipify.org/?format=json HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+64.62.197.143 - - [19/Apr/2024 07:14:50] "[33mCONNECT www.shadowserver.org:443 HTTP/1.1[0m" 404 -
+185.191.126.213 - - [19/Apr/2024 12:52:30] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+103.203.58.4 - - [19/Apr/2024 17:56:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+199.241.27.12 - - [19/Apr/2024 17:57:08] "GET /api/games/AAAAA HTTP/1.1" 200 -
+199.241.27.12 - - [19/Apr/2024 17:57:09] "GET /api/games HTTP/1.1" 200 -
+199.241.27.12 - - [19/Apr/2024 17:57:46] "GET /api/games/AAAAA HTTP/1.1" 200 -
+199.241.27.12 - - [19/Apr/2024 17:58:40] "GET /api/games/AAAAA HTTP/1.1" 200 -
+199.241.27.12 - - [19/Apr/2024 17:58:59] "GET /api/games/AAAAA HTTP/1.1" 200 -
+199.241.27.12 - - [19/Apr/2024 17:59:09] "GET /api/games HTTP/1.1" 200 -
+115.231.78.9 - - [19/Apr/2024 18:19:48] code 400, message Bad request version ('F\x07\x00tsXrcsXYs9\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00bbXcsXctst\x00\x00\x00\x00\x00\x00')
+115.231.78.9 - - [19/Apr/2024 18:19:48] "[31m[1m   TZ          0I    ¨À )t F tsXrcsXYs9                      bbXcsXctst      [0m" 400 -
+185.191.126.213 - - [19/Apr/2024 18:22:58] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+174.208.42.71 - - [19/Apr/2024 18:36:47] "GET /api/games/AAAAA HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:36:49] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:38:40] "[35m[1mPOST /api/games HTTP/1.1[0m" 201 -
+174.208.42.71 - - [19/Apr/2024 18:40:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:14] "GET /api/games HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:40:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:40:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:40:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:40:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:40:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:45] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:40:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:40:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:40:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:41:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:41:06] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:41:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:41:11] "GET /api/games HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:41:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:41:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:41:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:42] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:41:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:41:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:54] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:41:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:41:58] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:41:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:42:02] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:06] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:42:09] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:42:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:17] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:42:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:19] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:42:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:26] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:42:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:39] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:41] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:42:43] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:42:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:42:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:48] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:42:51] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:42:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:42:55] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:42:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:43:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:43:02] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:43:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:43:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:43:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:21] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:43:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:43:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:41] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:43:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:46] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:43:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:43:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:44:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:26] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:44:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:33] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:44:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:44:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:50] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:44:54] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:44:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:44:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:02] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:45:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:11] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:45:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:45:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:45:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:34] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:45:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:39] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:45:42] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:45:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:50] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:45:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:45:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:45:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:46:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:39] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:46:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:47:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:19] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:47:24] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:47:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:47:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:16] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:48:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:29] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:48:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:36] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:48:42] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:46] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:48:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:48:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:38] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:49:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:45] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 18:49:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:49:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:50:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:50:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:50:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:50:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:50:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:50:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:22] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:50:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:27] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:50:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:32] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:35] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:50:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:50:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:50:51] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:50:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:11] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:51:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:26] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:51:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:51:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:51:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:51:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:52:01] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 18:52:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:57:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 18:58:00] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 18:58:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:59:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:59:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:59:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 18:59:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 18:59:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:00:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:00:08] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:00:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:00:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:00:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:00:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:01:07] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:01:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:01:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:01:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:01:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:01:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:01:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:01:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:02:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:02:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:02:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:02:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:02:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:03:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:03:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:03:32] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:03:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:03:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:04:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:04:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:04:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:04:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:04:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:05:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:05:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:05:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:05:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:06:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:07:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:07:54] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:08:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:08:39] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:08:47] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:08:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:09:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:13:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:13:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:13:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:10] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:14:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:16] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:14:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:32] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:14:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:15:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:16:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:17:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:17:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:17:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:17:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:14] "GET /api/games/AAAAA HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:15] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:33] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:23:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:23:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:33] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:24:39] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:40] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:24:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:24:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:46] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:24:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:24:53] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:24:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:25:02] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:25:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:25:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:25:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:25:20] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:25:30] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:25:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:25:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:25:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:25:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:26:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:26:04] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:26:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:26:27] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:26:38] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:26:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:26:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:26:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:27:02] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:27:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:27:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:27:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:27:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:27:52] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:28:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:28:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:28:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:28:44] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:28:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:29:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:29:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:30:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:30:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:30:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:30:37] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:30:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:08] "GET /api/games/AAAAA HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:10] "GET /api/games HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:31:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:13] "GET /api/games/AAAAA HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:14] "GET /api/games HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:26] "GET /api/games/AAAAA HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:28] "GET /api/games HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:32:58] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:33:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:33:13] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:33:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:36:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:36:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:36:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:36:38] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:36:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:36:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:36:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:36:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:37:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:11] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:37:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:20] "GET /api/games/AAAAA HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:22] "GET /api/games HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:41] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:37:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:37:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:51] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:37:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:37:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:02] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:38:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:12] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:38:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:38:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:39:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:39:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:39:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:36] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:39] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:39:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:39:53] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:39:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:39:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:40:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:19] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:40:19] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:40:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:40:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:35] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:40:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:40:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:40:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:41:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:41:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:41:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:41:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:41:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:41:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:41:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:41:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:41:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:42:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:42:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:42:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:42:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:42:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:42:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:42:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:43:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:43:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:43:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:43:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:43:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:43:50] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:43:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:44:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:44:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:44:22] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:44:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:44:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:45:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:45:33] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:45:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:45:42] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:45:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:45:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:45:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:45:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:46:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:39] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:46:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:46:44] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:46:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:46:53] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:47:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:48:09] "GET /api/games/AAAAA HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:48:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:48:10] "GET /api/games HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:48:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:48:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:48:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:48:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:49:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:49:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:49:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:49:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:49:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:49:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:50:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:50:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:50:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:50:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:50:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:50:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:51:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:51:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:51:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:51:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:52:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:52:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:52:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:52:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:52:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:52:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:52:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:52:56] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:53:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:53:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:53:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:53:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:53:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:53:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:53:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:53:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:53:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:53:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:53:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:53:50] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:53:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:53:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:53:59] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 19:54:00] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:54:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 19:54:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:54:10] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:54:11] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:54:17] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:54:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 19:54:24] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 19:54:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:54:32] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:54:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:54:50] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:54:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:55:09] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:55:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:55:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:55:35] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 19:55:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 19:55:53] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:01:17] "GET /api/games/AAAAA HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:01:18] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:01:19] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:01:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:01:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:02:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:02:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:02:34] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:02:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:02:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:02:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:02:44] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:02:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:02:47] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:02:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:02:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:03:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:03:02] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 20:03:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:03:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:03:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:03:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:03:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:04:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:04:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:04:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:04:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:04:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:04:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:04:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:05:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:05:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:05:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:05:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:11:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:11:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:12:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:12:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:12:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:12:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:13:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:13:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:13:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:14:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:14:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:14:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:14:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:14:41] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:14:51] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:15:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:15:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:15:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:15:13] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:15:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:15:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:15:25] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 20:15:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:15:33] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:15:39] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 20:15:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:15:56] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 20:16:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:16:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:16:32] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 20:16:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 20:16:44] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 20:16:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:22:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:22:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:22:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:22:47] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:22:49] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:22:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:22:58] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:01] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:23:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:11] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:14] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:23:19] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:23:22] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:33] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:23:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:39] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:23:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:46] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:23:53] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:23:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:00] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:04] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:10] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:17] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:21] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:28] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:31] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:42] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:45] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:24:49] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.44.155 - - [19/Apr/2024 20:24:55] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.44.155 - - [19/Apr/2024 20:25:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:39:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:39:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:39:28] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:39:30] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:39:38] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:39:40] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:39:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:51:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:51:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:57:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:57:23] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:57:26] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:57:29] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:57:32] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:57:48] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:57:52] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:57:56] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:58:00] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:06] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 20:58:18] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:21] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:30] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:43] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:58:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:59:57] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 20:59:59] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:02] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:08] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:18] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:00:20] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:22] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:00:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:27] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:31] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:00:42] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:48] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:00:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:00:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:01:03] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:01:06] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:01:09] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:01:13] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:01:16] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:01:19] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:01:26] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:01:31] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+174.208.42.71 - - [19/Apr/2024 21:01:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:01:46] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:02:01] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:02:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:02:40] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:02:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:03:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:03:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:03:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:03:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:03:54] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:04:04] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:04:14] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:04:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:04:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:04:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:04:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:05:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:05:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:05:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:05:35] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:05:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:05:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:06:05] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:06:15] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:06:25] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:06:34] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:06:45] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:06:55] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:08:29] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:08:35] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 21:08:44] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:08:52] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:08:58] "[31m[1mPUT /api/games HTTP/1.1[0m" 405 -
+172.56.15.18 - - [19/Apr/2024 21:09:07] "GET /api/games/GLG66 HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:10:11] "[35m[1mPUT /api/games/GLG66 HTTP/1.1[0m" 201 -
+172.56.15.18 - - [19/Apr/2024 21:10:12] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:15] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:16] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:19] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:21] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:22] "GET /api/games HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:24] "GET /api/games/GLG66 HTTP/1.1" 200 -
+174.208.42.71 - - [19/Apr/2024 21:10:41] "GET /api/games HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:10:48] "GET /api/games HTTP/1.1" 200 -
+172.56.15.18 - - [19/Apr/2024 21:52:10] "GET /api/games/AAAAA HTTP/1.1" 200 -
+45.79.163.53 - - [19/Apr/2024 23:15:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+128.14.159.252 - - [20/Apr/2024 01:10:56] "[33mGET /api/v2/ HTTP/1.1[0m" 404 -
+128.14.159.252 - - [20/Apr/2024 01:10:56] "[33mGET /ms/1.0/ HTTP/1.1[0m" 404 -
+128.14.159.252 - - [20/Apr/2024 01:10:56] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+98.4.173.20 - - [20/Apr/2024 01:48:27] "GET /api/games/AAAAA HTTP/1.1" 200 -
+98.4.173.20 - - [20/Apr/2024 01:48:30] "GET /api/games HTTP/1.1" 200 -
+98.4.173.20 - - [20/Apr/2024 01:48:35] "GET /api/games HTTP/1.1" 200 -
+98.4.173.20 - - [20/Apr/2024 01:48:37] "GET /api/games/GLG66 HTTP/1.1" 200 -
+98.4.173.20 - - [20/Apr/2024 01:49:18] "GET /api/games HTTP/1.1" 200 -
+185.191.126.213 - - [20/Apr/2024 02:02:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+192.241.197.4 - - [20/Apr/2024 06:37:08] code 400, message Bad request version ('À\x14À')
+192.241.197.4 - - [20/Apr/2024 06:37:08] "[31m[1m {  w¬¼«±ÂªzN,5:èÈøÙ8çßµ:§ß³D´w  À/À+ÀÀÀÀ	ÀÀ[0m" 400 -
+64.62.197.75 - - [20/Apr/2024 09:44:14] code 400, message Bad request version ('À\x14À')
+64.62.197.75 - - [20/Apr/2024 09:44:14] "[31m[1m {  w÷®ÇM°$ÂUtÊ$>ìR¼Ñæ{ÎënrÃ  À/À+ÀÀÀÀ	ÀÀ[0m" 400 -
+184.105.247.196 - - [20/Apr/2024 11:58:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+184.105.247.196 - - [20/Apr/2024 11:58:43] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+184.105.247.196 - - [20/Apr/2024 11:58:47] "[35m[1mGET http://api.ipify.org/?format=json HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+184.105.247.196 - - [20/Apr/2024 11:58:49] "[33mCONNECT www.shadowserver.org:443 HTTP/1.1[0m" 404 -
+103.56.61.130 - - [20/Apr/2024 15:59:30] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+103.56.61.130 - - [20/Apr/2024 15:59:31] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+103.56.61.130 - - [20/Apr/2024 15:59:32] "[33mGET /robots.txt HTTP/1.1[0m" 404 -
+103.56.61.130 - - [20/Apr/2024 15:59:32] "[33mGET /.well-known/security.txt HTTP/1.1[0m" 404 -
+179.60.147.53 - - [20/Apr/2024 16:52:05] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+179.60.147.53 - - [20/Apr/2024 16:52:05] "[31m[1m  /*à     Cookie: mstshash=Administr[0m" 400 -
+87.236.176.32 - - [20/Apr/2024 16:55:01] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+87.236.176.214 - - [20/Apr/2024 16:55:02] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+185.180.143.18 - - [20/Apr/2024 22:17:33] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+185.180.143.18 - - [20/Apr/2024 22:17:44] "[33mGET /showLogin.cc HTTP/1.1[0m" 404 -
+184.105.139.67 - - [21/Apr/2024 07:10:46] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+184.105.139.67 - - [21/Apr/2024 07:10:54] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+184.105.139.67 - - [21/Apr/2024 07:10:58] "[35m[1mGET http://api.ipify.org/?format=json HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+184.105.139.67 - - [21/Apr/2024 07:11:01] "[33mCONNECT www.shadowserver.org:443 HTTP/1.1[0m" 404 -
+162.142.125.215 - - [21/Apr/2024 09:48:28] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+162.142.125.215 - - [21/Apr/2024 09:48:28] code 505, message Invalid HTTP version (2.0)
+162.142.125.215 - - [21/Apr/2024 09:48:28] "[35m[1mPRI * HTTP/2.0[0m" 505 -
+64.62.197.113 - - [21/Apr/2024 10:08:46] code 400, message Bad request version ('À\x14À')
+64.62.197.113 - - [21/Apr/2024 10:08:46] "[31m[1m {  w4ï¹eRÚíW[ø\%Â®ó1¢;ÞaIfV$hd  À/À+ÀÀÀÀ	ÀÀ[0m" 400 -
+8.213.135.202 - - [21/Apr/2024 10:48:56] "[35m[1mGET / HTTP/1.0[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+8.213.135.202 - - [21/Apr/2024 10:48:56] code 400, message Bad request syntax ('\x16\x03\x01\x00î\x01\x00\x00ê\x03\x03ò\x93qf\x8e\x07Ä\x92iÐÇ\x86\x19vº\x8e5')
+8.213.135.202 - - [21/Apr/2024 10:48:56] "[31m[1m î  êòqfÄiÐÇvº5[0m" 400 -
+71.6.134.234 - - [21/Apr/2024 10:50:43] code 400, message Bad request version ('À\x14À')
+71.6.134.234 - - [21/Apr/2024 10:50:43] "[31m[1m î  êú±¹²Ýt\¬*0|ùúÐXäºèíJÿ¸cOÀ ÌVØöñdÜìwïÍZkË+äbøÏ4j$ã:^h7_ &Ì¨Ì©À/À0À+À,ÀÀ	ÀÀ[0m" 400 -
+71.6.134.234 - - [21/Apr/2024 11:06:14] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+71.6.134.234 - - [21/Apr/2024 11:06:43] "[35m[1mGET /?__debugger__=yes HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+162.216.149.105 - - [21/Apr/2024 13:49:10] code 400, message Bad request version ('À\x13À')
+162.216.149.105 - - [21/Apr/2024 13:49:10] "[31m[1m î  êX$v$N³ÎÀõ»P}C`ìî3ü<þü¼þuÚTZ <ª¾ë~Ó3âj²PN.£>HÑÞFEXûWwù &À+À/À,À0Ì©Ì¨À	ÀÀ[0m" 400 -
+162.216.149.105 - - [21/Apr/2024 13:49:11] code 400, message Bad HTTP/0.9 request type ("\x16\x03\x01\x00Ê\x01\x00\x00Æ\x03\x03\x1bT\x8f\x87'\x1boÛE\x9e'K¿ü\x11è¡]ËùåÌ\x9d\x8e'Ý:Ú#÷=©\x00\x00hÌ\x14Ì\x13À/À+À0À,À\x11À\x07À'À#À\x13À")
+162.216.149.105 - - [21/Apr/2024 13:49:11] "[31m[1m Ê  ÆT'oÛE'K¿üè¡]ËùåÌ'Ý:Ú#÷=©  hÌÌÀ/À+À0À,ÀÀÀ'À#ÀÀ	À(À$ÀÀ[0m" 400 -
+45.227.254.8 - - [21/Apr/2024 15:03:12] code 400, message Bad HTTP/0.9 request type ('\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie:')
+45.227.254.8 - - [21/Apr/2024 15:03:12] "[31m[1m  /*à     Cookie: mstshash=Administr[0m" 400 -
+185.242.226.43 - - [21/Apr/2024 17:57:12] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+185.242.226.43 - - [21/Apr/2024 17:58:08] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+185.242.226.43 - - [21/Apr/2024 17:58:09] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+43.133.145.201 - - [21/Apr/2024 23:49:24] code 400, message Bad request version ('À\x13À')
+43.133.145.201 - - [21/Apr/2024 23:49:24] "[31m[1m î  êI²ù¼iÀYûøºe-Ud]·b8´gÆÝ9dZ8f gÁi³öòË°©NÖ½g|püé<Z¡T·é¥8'O; &À+À/À,À0Ì©Ì¨À	ÀÀ[0m" 400 -
+43.133.145.201 - - [21/Apr/2024 23:49:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+198.199.113.95 - - [22/Apr/2024 00:19:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+Traceback (most recent call last):
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/app.py", line 12, in home
+    return render_template("home_game.html", games=games)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/bmernax30/Documents/ddg_rest/game/templates/home_game.html", line 16, in top-level template code
+    {{ game.finished }} {{ encounter.course_id}} {{ encounter.game_mode}}
+  File "/home/bmernax30/Documents/ddg_rest/game/game_env/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'encounter' is undefined
+198.199.114.43 - - [22/Apr/2024 01:05:37] code 400, message Bad request version ('À\x14À')
+198.199.114.43 - - [22/Apr/2024 01:05:37] "[31m[1m {  wÃ²ïöÅÝþç<>AÀx6ÕÊ©à¡;E'?þ¤  À/À+ÀÀÀÀ	ÀÀ[0m" 400 -
