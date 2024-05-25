@@ -7,6 +7,28 @@ def read_all():
     games = Game.query.all()
     return games_schema.dump(games)
 
+def read_all_user(game_id):
+    games = Game.query.all()
+    user_games = []
+    for game in games:
+        if game.player1_username == game_id:
+            user_games.append(game)
+        if game.player2_username == game_id:
+            user_games.append(game)
+        if game.player3_username == game_id:
+            user_games.append(game)
+        if game.player4_username == game_id:
+            user_games.append(game)
+        if game.player5_username == game_id:
+            user_games.append(game)
+        if game.player6_username == game_id:
+            user_games.append(game)
+        if game.player7_username == game_id:
+            user_games.append(game)
+        if game.player8_username == game_id:
+            user_games.append(game)
+    return games_schema.dump(user_games)
+
 def create(game):
     id = game.get("id")
     existing_game = Game.query.filter(Game.id == id).one_or_none()

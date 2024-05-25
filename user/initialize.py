@@ -11,7 +11,7 @@ columns = [
 	]
 #Initialize Data
 users = [
-	"1,'merna','password','random_phone_id',0",
+	"1,'DOES NOT EXIST','password','random_phone_id',0",
 	]
 #Create the database
 create_table_cmd = f"CREATE TABLE user ({','.join(columns)})"

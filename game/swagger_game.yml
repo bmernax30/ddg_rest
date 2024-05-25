@@ -167,3 +167,14 @@ paths:
       responses:
         "204":
           description: "Successfully deleted game"
+  /games/user/{game_id}:
+    get:
+      operationId: "games.read_all_user"
+      tags:
+        - Games
+      summary: "Read all games from user"
+      parameters:
+        - $ref: "#/components/parameters/game_id"
+      responses:
+        "200":
+          description: "Successfully read all games for user"

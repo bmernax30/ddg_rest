@@ -20,11 +20,11 @@ def create(user):
 
 def read_one(username):
     user = User.query.filter(User.username == username).one_or_none()
-    print(user)
     if user is not None:
         return user_schema.dump(user)
     else:
-        abort(404, f"Person with username {username} not found")
+        user = User.query.filter(User.username == "DOES NOT EXIST").one_or_none()
+        return user_schema.dump(user)
         
 def update(username, user):
     existing_user = User.query.filter(User.username == username).one_or_none()
